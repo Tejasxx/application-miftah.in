@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miftah - Work with Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="formContainer">
+        <div class="form-header">
+            <h1>Join Miftah Team</h1>
+            <h2>APPLICATION FOR THE CONTENT CREATER</h2>
+            <p>We're excited to explore your potential! Fill out the form below.</p>
+        </div>
+
+        <form id="miftahForm" class="miftah-form" enctype="multipart/form-data">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Name<span class="required-marker">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email<span class="required-marker">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number<span class="required-marker">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Your contact number" required>
+            </div>
+
+            <!-- City/State -->
+            <div class="form-group">
+                <label for="city">City/State<span class="required-marker">*</span></label>
+                <input type="text" id="city" name="city" placeholder="Your city or state" required>
+            </div>
+
+            <!-- Education Board -->
+            <div class="form-group">
+                <label>Education Board<span class="required-marker">*</span></label>
+                <select id="educationBoard" name="educationBoard" required>
+                    <option value="">Select your education board</option>
+                    <option value="CBSE">CBSE</option>
+                    <option value="CISCE">CISCE (ICSE/ISC/CVE)</option>
+                    <option value="State Board">State Board</option>
+                    <option value="IB">IB</option>
+                    <option value="Cambridge IGCSE">Cambridge IGCSE</option>
+                </select>
+            </div>
+            
+            <!-- UI/UX Knowledge Question -->
+            <div class="form-group" id="uiuxKnowledge">
+                <label>How would you define your UI/UX knowledge?<span class="required-marker">*</span></label>
+                <select name="uiuxKnowledge" required>
+                    <option value="">Select your UI/UX knowledge level</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Very Well">Very Well</option>
+                    <option value="Average">Average</option>
+                    <option value="Basic">Basic</option>
+                    <option value="Don't Know">Don't Know</option>
+                </select>
+            </div>
+
+            <!-- Motivation -->
+            <div class="form-group">
+                <label for="motivation">What motivates you to work with us?<span class="required-marker">*</span></label>
+                <textarea id="motivation" name="motivation" rows="4" placeholder="Share your motivation" required></textarea>
+            </div>
+
+            <!-- Story from School Days -->
+            <div class="form-group">
+                <label for="schoolStory">Share a story from your school days<span class="required-marker">*</span></label>
+                <textarea id="schoolStory" name="schoolStory" rows="4" placeholder="Your story" required></textarea>
+            </div>
+
+            <!-- File Upload -->
+            <div class="form-group">
+                <label for="resume">Upload Documents (Resume, Cover Letter, Work Samples)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" multiple>
+            </div>
+
+            <!-- Paste Links -->
+            <div class="form-group">
+                <label for="links">Paste links (Resume, Cover Letter, Work Samples)</label>
+                <input type="url" id="links" name="links" placeholder="Paste links here">
+            </div>
+
+            <!-- How You Got to Know -->
+            <div class="form-group">
+                <label>How did you get to know about these openings?<span class="required-marker">*</span></label>
+                <select id="source" name="source" required>
+                    <option value="">Select an option</option>
+                    <option value="Family or Friends">Family or Friends</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Search Engine">Search Engine (like Google)</option>
+                    <option value="Job Boards">Job Boards (like Indeed)</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Success Page -->
+    <div class="success-page" id="successPage">
+        <div class="success-content">
+            <h2>Application Submitted Successfully!</h2>
+            <p>Thank you for your interest in joining the Miftah Team. We have received your application and will review it carefully.</p>
+            <p>Our team will get back to you soon with further information or next steps.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
