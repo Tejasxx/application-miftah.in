@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function submitFormData(data) {
         // Updated Apps Script Web App URL you provided
-        const url = "https://script.google.com/macros/s/AKfycbzeeYbv-436Ut2t-DmR7mRJBmGgFQ2s9fZP-FdHad9TvNn_sQEZjcmWOxGbuR8mk3Y/exec";
+      const url = "https://script.google.com/macros/s/AKfycbwt71sMxQcbYMtqpekTsxIv7UylU9VMwth5IpSF96VvMApq7DSnlBv6s8woPkWCEPVP/exec";
         
         // Convert data to JSON
         const payload = JSON.stringify(data);
